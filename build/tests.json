@@ -1,0 +1,31 @@
+{
+  "contracts": {
+    "EmptyContract": "ca4ea9c408ec8315a774935ab3d54ea39ab065fe",
+    "Sender": "fb7d3dd03304055094cf7e434aa90b119df2142e",
+    "SenderFactory": "e0146b893de560269a3833951b333d960264a24d"
+  },
+  "tests": {
+    "tests/test_send_ETH/test_sending_to_account.py": {
+      "coverage": false,
+      "isolated": [
+        "Sender",
+        "SenderFactory"
+      ],
+      "results": "..",
+      "sha1": "fba0cc7de914461cf4f158eacde0ae1795f0876b",
+      "txhash": []
+    },
+    "tests/test_send_ETH/test_sending_to_contract.py": {
+      "coverage": false,
+      "isolated": [
+        "EmptyContract",
+        "Sender",
+        "SenderFactory"
+      ],
+      "results": ".",
+      "sha1": "c7e11470427a42f6defbfd121f745c3de7e5c0cd",
+      "txhash": []
+    }
+  },
+  "tx": {}
+}
