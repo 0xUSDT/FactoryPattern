@@ -12,6 +12,6 @@ contract SenderFactory{
     function sendETH(address _to) external payable{
         uint balanceBefore = _to.balance;
         Sender sender = new Sender{value : msg.value}(_to);
-        require(_to.balance == balanceBefore + msg.value, "Factory: Transfer failed");
+        require(_to.balance == balanceBefore + msg.value, "SenderFactory: Transfer failed");
     }
 }
